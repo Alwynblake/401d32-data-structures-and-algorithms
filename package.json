@@ -1,0 +1,30 @@
+{
+  "name": "401d32-data-structures-and-algorithms",
+  "version": "1.0.0",
+  "description": "## Table of Contents:",
+  "main": "index.js",
+  "scripts": {
+    "start": "node list/index.js",
+    "lint": "eslint '**/*.js'",
+    "test": "node_modules/.bin/jest --coverage --verbose",
+    "test-watch": "node_modules/.bin/jest --watchAll --verbose --coverage",
+    "jsdoc": "node_modules/.bin/jsdoc -c ./docs/config/jsdoc.config.json",
+    "watch": "node_modules/.bin/jest --watchAll --coverage --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alwynblake/401d32-data-structures-and-algorithms.git"
+  },
+  "author": "Alistair Blake",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alwynblake/401d32-data-structures-and-algorithms/issues"
+  },
+  "homepage": "https://github.com/Alwynblake/401d32-data-structures-and-algorithms#readme",
+  "dependencies": {
+    "eslint": "^6.5.1",
+    "jest": "^24.9.0",
+    "jsdoc": "^3.6.3",
+    "save-dev": "0.0.1-security"
+  }
+}
