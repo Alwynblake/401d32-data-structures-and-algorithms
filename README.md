@@ -3,3 +3,5 @@
 ## Table of Contents:
 
 ### arrayReverse
+
+### arrayShift
