@@ -5,3 +5,5 @@
 ### arrayReverse
 
 ### arrayShift
+
+### arrayBinarySearch
