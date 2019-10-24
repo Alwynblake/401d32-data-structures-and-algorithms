@@ -10,21 +10,6 @@ class LinkedList {
 
   }
 
-  append(value) {
-
-    if (!this.head) {
-      this.head = new Node(value);
-      return;
-    }
-
-    let current = this.head;
-    // while there is a next value set that value of current to current.next
-    while (current.next) {
-      current = current.next;
-    }
-    current.next = new Node(value);
-  }
-
   kthFromEnd(k) {
 
     let counter = 1;
