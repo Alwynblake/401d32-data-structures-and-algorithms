@@ -12,3 +12,4 @@ Writes the following methods for the Linked List class:
 * The BigO is O(n)
 
 ## Solution
+![](../assets/linkedlist.jpeg)
