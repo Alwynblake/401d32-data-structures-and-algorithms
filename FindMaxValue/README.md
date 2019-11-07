@@ -11,5 +11,7 @@ data-structures-and-algorithms
 2. reassign the max
 3. return the max
 
-## Solution
-![](../assets/FindMaxValue.JPG)
+## Solution:
+
+![](../assets/FindMaxValue.JPG)   
+
