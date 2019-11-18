@@ -31,3 +31,5 @@
 ### BreadthFirst
 
 ### FindMaxValue
+
+### InsertionSort
