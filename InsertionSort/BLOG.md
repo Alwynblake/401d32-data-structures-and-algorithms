@@ -24,9 +24,9 @@ Sample:
 Algorithm:
 * Declare some variable for the pointer to nodes.
 * Traverse our linkedList.
-* Reassign pointers for each iteration of our while loop
+* Reassign pointers for each iteration of our while loop.
 * While we evaluate if there is a smaller number in the array than what is currently present in index i,  
 we swap it with the previous node until the previous node is smaller then  current node; and current node is less than next.
-* Return the new linkedList
+* Return the new linkedList.
 
-![](../assets/)
+![](../assets/InsertionSort.jpg)
