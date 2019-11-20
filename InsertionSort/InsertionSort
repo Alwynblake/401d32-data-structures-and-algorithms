@@ -1,0 +1,61 @@
+'use strict';
+
+const Node = require('./lib/node');
+
+class SearchTree {
+  constructor() {
+    this.root = null;
+  }
+
+  insert(node, value) {
+    if (node == null) {
+      return new Node(value);
+    } else {
+
+      let temp;
+
+      if (value <= node.value) {
+        temp = this.insert(node.left, value);
+        node.left = temp;
+      } else {
+        temp = this.insert(node.right, value);
+        node.right = temp;
+      }
+
+      return node;
+    }
+  }
+}
+
+function findNextLargestNode(root, targetNode) {
+  if (targetNode.right !== null) {
+    return findMin(targetNode.right);
+  }
+
+  let nextLargestNode = null;
+  let current = root;
+
+  while (current) {
+
+    if (current.value > targetNode.value) {
+      nextLargestNode = current;
+      current = current.left;
+    } else if (current.value < targetNode.value) {
+      current = current.right;
+    } else {
+      break;
+    }
+  }
+
+  return nextLargestNode;
+}
+
+function findMin(node) {
+  let current = node;
+
+  while (current.left) {
+    current = current.left;
+  }
+
+  return current;
+}
