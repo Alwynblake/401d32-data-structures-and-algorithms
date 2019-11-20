@@ -51,7 +51,7 @@ function findNextLargestNode(root, targetNode) {
 }
 
 function findMin(node) {
-  let current = node
+  let current = node;
 
   while (current.left) {
     current = current.left;
