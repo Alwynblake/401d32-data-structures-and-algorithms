@@ -1,31 +1,40 @@
+const hash = (key, size) => {
+  let hashedkey = 0;
+
+  for (let i=0;i<key.length;i++) {
+    hashedkey = key.charCodeAt(i)
+  }
+  return hashedkey % size
+};
+
 class HashTable{
-constructor(size=[]){
-this.array = new Array(size);
-this.size = size
+constructor(){
+this.buckets = Array(this.size);
+this.size = 50;
+
+  for (let i=0;i< this.buckets.length; i++) {
+    this.buckets[i] = new Map()
+  }
   }
 }
 
-Let HashTable = (get) => {
-return key.toString().length % this.size;
+  get(key)
+{
+  // index of the bucket
+  let index = this.has(key);
 
+  // if there is no bucket
+  if (!this.arrays[index]) return null
 
-
-  get(key){
-    // index of the bucket
-    let index = this.has(key);
-
-    // if there is no bucket
-    if(!this.arrays[index])return null
-
-    for (let bucket of this.arrays[index]){
+  for (let bucket of this.arrays[index]) {
     // if key matches
-    if(array [0] === key){
+    if (array [0] === key) {
       // value
-      return array [1]
-
-    }}
+      let array;
+      return array[1]
+    }
   }
-};
+}
   // }
   //   return this.containsKey(key) ? this._map[key] : null;
   // },
